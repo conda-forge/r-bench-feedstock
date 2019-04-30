@@ -1,4 +1,4 @@
-{% set version = '1.0.1' %}
+{% set version = "1.0.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bench_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bench/bench_{{ version }}.tar.gz
-  sha256: e88d17017de89ee49fc48a2902014838f038b56c635ad05d933c65bee4a83c42
+  sha256: 258c270a919bf9eb237500fb193149377cabd41096507b18f6c9b495b764191e
 
 build:
   merge_build_host: True  # [win]
-  number: 1000
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
