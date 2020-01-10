@@ -34,7 +34,7 @@ requirements:
     - r-glue
     - r-pillar
     - r-profmem
-    - r-rlang
+    - r-rlang >=0.2.0
     - r-tibble
   run:
     - r-base
@@ -42,7 +42,7 @@ requirements:
     - r-glue
     - r-pillar
     - r-profmem
-    - r-rlang
+    - r-rlang >=0.2.0
     - r-tibble
 
 test:
