@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bench_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bench/bench_{{ version }}.tar.gz
-  sha256: 83373d8b1060e3579ca9725f527a605e312ba5b5b5f827d332fc71ab80abb8d1
+  sha256: af910a768db79fe68597e6e79ff1012b810b8f88fb29c04432cded058ec2439b
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -55,7 +55,7 @@ about:
   license: GPL-3
   summary: Tools to accurately benchmark and analyze execution times for R expressions.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
