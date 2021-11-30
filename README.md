@@ -3,7 +3,7 @@ About r-bench
 
 Home: https://github.com/r-lib/bench
 
-Package license: GPL-3
+Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bench-feedstock/blob/master/LICENSE.txt)
 
