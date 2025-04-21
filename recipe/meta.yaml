@@ -31,18 +31,18 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-glue
-    - r-pillar
-    - r-profmem
-    - r-rlang >=0.2.0
-    - r-tibble >=3.0.1
+    - r-glue >=1.8.0
+    - r-pillar >=1.10.1
+    - r-profmem >=0.6.0
+    - r-rlang >=1.1.4
+    - r-tibble >=3.2.1
   run:
     - r-base
-    - r-glue
-    - r-pillar
-    - r-profmem
-    - r-rlang >=0.2.0
-    - r-tibble >=3.0.1
+    - r-glue >=1.8.0
+    - r-pillar >=1.10.1
+    - r-profmem >=0.6.0
+    - r-rlang >=1.1.4
+    - r-tibble >=3.2.1
 
 test:
   commands:
